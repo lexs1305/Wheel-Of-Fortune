@@ -13,10 +13,10 @@ public class FileManagment {
                 String[] info = sc.nextLine().split("/");
                 output.add(new Question(info[0], info[1], info[2], info[3], info[4], info[5], info[6], Integer.parseInt(info[7])));
             }
-            return output;
         } catch (FileNotFoundException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+        return output;
     }
 }
